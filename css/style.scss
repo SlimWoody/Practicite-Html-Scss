@@ -1,9 +1,178 @@
+$widthSite: 1180px;
+$colorHeaderText: #fdfdfd;
+$accentColorSite: #1a3e3e;
+
+@font-face {
+    font-family: "NEXT ART";
+    src: local("NEXT ART"), local("NEXT-ART"), url("/font/nextart/NEXT\ ART_Bold.otf");
+}
+
+
 * {
     margin: 0;
     padding: 0;
-} 
+    box-sizing: border-box;
+}
 
+li {
+    list-style-type: none;
+    /* Убираем маркеры */
+}
+
+a {
+    text-decoration: none;
+}
 
 body {
     font-family: "Nunito Sans", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
+}
+
+.header {
+    background: url("/img/header/background.jpg") no-repeat;
+    background-size: cover;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+    &__links-box {
+        display: flex;
+        gap: 24px;
+    }
+    &__link {
+        font-weight: 600;
+        font-size: 18px;
+        color: $colorHeaderText;
+    }
+
+    &__consultation-button {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: $colorText;
+        padding: 12px 24px;
+        background-color: $accentColorSite;
+        border-radius: 4px;
+        margin-left: 49px;
+    }
+
+    &__bottom {
+        margin-top: 447px;
+        padding-bottom: 81px;
+    }
+
+    &__bottom-title {
+        font-family: "NEXT ART", "Arial", sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: $colorHeaderText;
+        max-width: 92%;
+    }
+
+    &__search-tour-block {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 40px 42px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        margin-top: 41px;
+    }
+
+    &__search-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__search-field select,
+    &__search-field input {
+        font-family: "Nunito Sans", sans-serif;
+        border: 1px solid $colorText;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: $colorHeaderText;
+        width: 270px;
+        height: 52px;
+        background: rgba(255, 255, 255, 0);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        padding-left: 14px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    &__button-search-tour {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: $accentColorSite;
+        padding: 16px 32px;
+        background-color: $colorText;
+        border-radius: 4px;
+        display: flex;
+    }
+}
+
+.programm-tour {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__image-block {
+        position: relative;
+    }
+    &__image-box {
+        border-radius: 24px;
+        width: 350px;
+    }
+
+    &__img-2 {
+        object-fit: cover;
+        object-position: top center;
+    }
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 83%;
+    color: #f2be22;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $colorText;
 }

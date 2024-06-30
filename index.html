@@ -1,13 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https: //fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.scss">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__top center">
+            <div class="header__top-left">
+                <a href="index.html" class="logotype">
+                    <img src="./img/header/logo.svg" alt="logotype">
+                </a>
+            </div>
+            <div class="header__top-rigth">
+                <nav class="header__nav">
+                    <ul class="header__links-box">
+                        <li><a href="#" class="header__link">Главная</a></li>
+                        <li><a href="#" class="header__link">Про гида</a></li>
+                        <li><a href="#" class="header__link">Программа тура</a></li>
+                        <li><a href="#" class="header__link">Стоимость</a></li>
+                        <li><a href="#" class="header__link">Блог</a></li>
+                        <li><a href="#" class="header__link">Контакты</a></li>
+                    </ul>
+                    <a href="#" class="header__consultation-button">Консультация</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__bottom center">
+            <h1 class="header__bottom-title">
+                Насладись прогулкой в&nbsp;горах с&nbsp;командой единомышленников
+            </h1>
+            <div class="header__search-tour-block">
+                <div class="header__search-field">
+                    <select name="location-tour" id="tour"  name="location[] required">
+                        <option disabled selected hidden>Локация для тура</option>
+                        <option value="Italy">Красивая Италя</option>
+                        <option value="Italy">Озеро возле гор</option>
+                        <option value="Italy">Красивая Италя</option>
+                        <option value="Italy">Красивая Италя</option>
+                    </select>
+                    <label for="tour">выберите из списка</label>
+                </div>
+                <div class="header__search-field">
+                    <input type="date" id="date" placeholder="Дата похода">
+                    <label for="date">укажите диапазон</label>
+                </div>
+                <div class="header__search-field">
+                    <select id="participants" placeholder="укажите диапазон" required>
+                        <option disabled selected hidden>Участники</option>
+                        <option value="4">4 человек</option>
+                        <option value="5">5 человек</option>
+                        <option value="6">6 человек</option>
+                        <option value="7">7 человек</option>
+                        <option value="8">8 человек</option>
+                        <option value="9">9 человек</option>
+                        <option value="10">10 человек</option>
+                        <option value="11">11 человек</option>
+                        <option value="12">12 человек</option>
+                        <option value="13">13 человек</option>
+                    </select>
+                    <label for="participants">минимум 4 человека</label>
+                </div>
+                <div class="header__search-button-box">
+                    <a href="#" class="header__button-search-tour">Найти программу</a>
+                </div>
+            </div>
+    </header>
+    <section class="programm-tour center">
+        <div class="programm-tour__image-block">
+            <div class="programm-tour__image-box">
+                <img class="programm-tour__img-1" src="/img/programm-tour/image1.jpg" alt="scenery">
+            </div>
+            <div class="programm-tour__image-box">
+                <img class="programm-tour__img-2" src="/img/programm-tour/image2.jpg" alt="scenery">
+            </div>
+            
+        </div>
+        <div class="programm-tour__content-block">
+            <h3 class="subtitle">
+                о нашем походе
+            </h3>
+            <h4 class="title">
+                Исследуйте все горные массивы мира вместе с нами
+            </h4>
+            <p class="text">
+                Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
+            </p>
+            <a href="#" class="button">Программа тура</a>
+        </div>
+    </section>
+
 </body>
+
 </html>
